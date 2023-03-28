@@ -1,0 +1,30 @@
+# This is a TOML file for configuring my website
+
+# The command to run before building the site
+command = "rm -rf __obsidian __site && mkdir __obsidian && mv * __obsidian || true && git clone https://github.com/ppeetteerrs/obsidian-zola.git __site && __site/run.sh"
+
+# The description for the landing page
+landing_page_description = "I have nothing but intelligence."
+
+# The options for the sidebar
+[sidebar]
+# How to sort notes inside each section on the right sidebar ("date" or "title")
+sort_by = "date"
+# Whether sidebar sections should be collapsed by default (true or false)
+collapse_sections = false
+# The names of the sections on the sidebar
+sections = ["main", "optional", "default"]
+# The names of the subsections on the sidebar
+subsections = ["visjs", "graph", "options"]
+
+# The options for the footer
+[footer]
+# Additional footer content
+content = ""
+
+# The options for the visjs graph
+[visjs]
+# Whether to show knowledge graph on home page (true or false)
+show_on_home_page = true
+# Whether to show knowledge graph on every page (true or false)
+show_on_every_page = true
